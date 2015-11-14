@@ -1,0 +1,44 @@
+name = lab5
+description = Phase2's Pattern Lab Starter dressed up as a Boron Sub-theme.
+core = 7.x
+base theme = boron
+
+stylesheets[screen][] = css/style.css
+
+;bower:css
+;endbower
+
+;bower:js
+;endbower
+
+scripts[] = js/script.js
+
+; these are the stock regions
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[sidebar_first] = Sidebar first
+regions[content] = Content
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
+regions[help] = Help
+
+; Options ----
+
+;features[] = logo
+;features[] = name
+;features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+;features[] = main_menu
+;features[] = secondary_menu
+
+; additional theme settings
+settings[breadcrumb_display]   = no
+settings[breadcrumb_separator] = ' › '
+settings[breadcrumb_home]      = 1
+settings[breadcrumb_trailing]  = 0
+settings[breadcrumb_title]     = 0

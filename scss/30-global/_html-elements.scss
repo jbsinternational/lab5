@@ -1,0 +1,46 @@
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+body {
+  @include body-copy();
+}
+
+h1 {
+  @include h1();
+}
+
+blockquote {
+  font-style: italic;
+  border-left: solid 3px $color--gray;
+  margin-left: $spacing;
+  padding-left: $spacing;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+	@include link-colors($color--secondary--blue,darken($color--secondary--blue,20%));
+}
